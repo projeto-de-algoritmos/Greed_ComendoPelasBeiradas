@@ -1,8 +1,12 @@
 import random
 
-conjunto = [8, 15, 3, 7, 2, 2, 15]
 resposta_pessoa = []
 resposta_computador = []
+
+conjunto = []
+for i in range(0,8,1):
+    conjunto.append(random.randint(0,50))
+
 
 while conjunto:
     print(conjunto)
