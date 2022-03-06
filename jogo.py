@@ -7,11 +7,11 @@ conjunto = []
 for i in range(0,8,1):
     conjunto.append(random.randint(10,99))
 
-print(guloso.encontrar_melhor_solucao(conjunto))
-
 while conjunto:
 
-    resposta = random.choice([conjunto[0], conjunto[len(conjunto)-1]])
+    #resposta = random.choice([conjunto[0], conjunto[len(conjunto)-1]])
+    resposta = guloso.fazer_escolha(conjunto)
+
     print(conjunto)
     print("O computador escolheu: ", resposta)
     conjunto.remove(resposta)
