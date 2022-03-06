@@ -1,14 +1,22 @@
-import random
+import random, guloso
 
 resposta_pessoa = []
 resposta_computador = []
 
 conjunto = []
 for i in range(0,8,1):
-    conjunto.append(random.randint(0,50))
+    conjunto.append(random.randint(10,99))
 
+print(guloso.encontrar_melhor_solucao(conjunto))
 
 while conjunto:
+
+    resposta = random.choice([conjunto[0], conjunto[len(conjunto)-1]])
+    print(conjunto)
+    print("O computador escolheu: ", resposta)
+    conjunto.remove(resposta)
+    resposta_computador.append(resposta)
+
     print(conjunto)
     resposta = int(input("Escolha um dos números das pontas: "))
 
@@ -21,13 +29,6 @@ while conjunto:
 
     # Implementando redução do conjunto após escolha do jogador
     conjunto.remove(resposta)
-
-    resposta = random.choice([conjunto[0], conjunto[len(conjunto)-1]])
-    print(conjunto)
-    print("O computador escolheu: ", resposta)
-    conjunto.remove(resposta)
-
-    resposta_computador.append(resposta)
 
 print("O resultado da pessoa foi:", sum (resposta_pessoa))
 print('O resultado do computador foi:', sum(resposta_computador))
