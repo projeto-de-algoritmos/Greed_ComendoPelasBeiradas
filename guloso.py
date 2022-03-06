@@ -1,3 +1,4 @@
+
 def melhor_solucao(conjunto):
     soma_impares = sum(conjunto[::2])
     soma_pares = sum(conjunto[1::2])
