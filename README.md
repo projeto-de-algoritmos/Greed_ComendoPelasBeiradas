@@ -1,10 +1,6 @@
-# Greed_Dupla24
-
-# Comendo pelas beiradas
-
-
-**Número da Lista**: 2  
-**Conteúdo da Disciplina**: Grafos 2  
+# Comendo pelas Beiradas
+**Número da Lista**: 3  
+**Conteúdo da Disciplina**: Algoritmos Ambiciosos  
 
 ## Alunos
 |  Matrícula  |            Aluno           |
@@ -14,16 +10,17 @@
 
 ## Sobre 
 
+Surfando nas interwebs, encontramos um código em um [sítio eletrônico](https://www.geeksforgeeks.org/coin-game-of-two-corners-greedy-approach/?ref=gcse) que rascunhava um algoritmo guloso para sempre ganhar um jogo.
 
-Pensando nisso, resolvemos desenvolver o melhor caminho para ele percorrer antes de se molhar (já que ele não gosta de tomar banho).
+O jogo consiste de um conjunto de números. Cada jogador, no seu turno, escolhe um dos números das extremidades. Vence o jogador cujos números alcançarem a maior soma.
 
-Nesse trabalho foi implementado:
-
-
+Como a webpágina não trazia a implementação do jogo, decidimos realizá-la, e utilizar o algoritmo guloso para criar um adversário (quase) invencível.
 
 ## Screenshots
 
-
+O jogo acontece todo no terminal, como exemplificado nas capturas de tela abaixo:  
+![](ibagens/img1.png)  
+![](ibagens/img2.png)
 
 ## Instalação 
 **Linguagem**: Python<br>
@@ -33,18 +30,17 @@ Nesse trabalho foi implementado:
 
 1) Primeiramente o usuário deverá clonar o repositório:
 
-`git clone https://github.com/projeto-de-algoritmos/Grafos2_PasseioDoOsvaldo`
+`git clone https://github.com/projeto-de-algoritmos/Greed_ComendoPelasBeiradas`
 
 2) Depois do repositório clonado, você deverá instalar o Python caso não tenha em sua máquina:
 
-` sudo apt-get install python3`
-
-
+`sudo apt-get install python3`
 
 
 ## Uso 
 
 Depois de instalar as dependências acima, o usuário precisará apenas compilar o código no terminal:
 
+`python3 jogo.py`
 
-
+#### Boa sorte tentando prevalecer do domínio intelectual do maquinário! MAUHAHAHAMAUHAHAHA!
